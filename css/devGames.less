@@ -1,6 +1,29 @@
 @import "globales.less";
 @import "intros.less";
 @import "articulos.less";
+@import "contenedor.less";
+
+@media (prefers-color-scheme: dark) {
+	body {
+	  background-color: @color-primario;
+	  color: @color-claro;
+	}
+	.intro {
+	  background-color: @color-secundario;
+	}
+	.articulo--principal h2 {
+	  color: @color-secundario;
+	}
+	.caja{
+		&__contenido {
+			background-color: @color-secundario;
+		}
+
+		&__categoria{
+			color: white !important;
+		}
+	}
+  }
 
 
 

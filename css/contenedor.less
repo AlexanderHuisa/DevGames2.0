@@ -1,0 +1,27 @@
+.contenedor--cajas{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caja{
+    max-width: 430px;
+    //llamando a mixins para hacer uso de la variable
+    .sombra-caja();
+
+    &__contenido{
+        padding: 24px;
+        color: @color-primario;
+    }
+    span {
+        color: @color-secundario;
+        .Font();
+    }
+
+    a{
+        text-decoration: none;
+        color: @color-variacion;
+        .Font();
+    }
+}
